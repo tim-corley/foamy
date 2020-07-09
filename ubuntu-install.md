@@ -26,3 +26,20 @@ Ultimately, I ended up with Ubuntu 20.04 LTS booting up and working great. Yay! 
  - try to anticipdate issues ahead of time (mentally walkthrough the process, google details)
  - be patient - if dont have the proper hardware, hold off and go get it 
  - ensure going into something new, there is ability / tollerance for mistakes. if i had had valuable data on the Windows disk, it would have been bad.
+
+## P.S. - Helpful Shortcuts & Commands
+ - prompt terminal:
+  
+<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>t</kbd>
+ - copy & paste within terminal:
+  
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>c</kbd>
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>v</kbd>
+ - get machine name: 
+```bash
+$ sudo dmidecode | less | grep "Product Name"
+```
+ - view partitions:
+```bash
+$ sudo fdisk -l
+```
