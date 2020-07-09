@@ -68,10 +68,7 @@ $ sudo ls -a
 
 delete file:
 
-$ rm my-file.txt 
-
-
-Hey! first commit from new linux machine! Will SSH work?
+$ rm my-file.txt
 
 
 
