@@ -17,45 +17,6 @@
 
 ***
 
-[[ubuntu-install]]
-
-- diving into using linux
-- setting up from a new pc
-- which distro? quick YouTube search: https://www.youtube.com/watch?v=-EOzLbWxLWQ, https://www.youtube.com/watch?v=fGNl0KxOt7Q, https://www.youtube.com/watch?v=sg4GOLWar44
-- decided to go with Ubuntu 20.04 LTS, branch new, popular & supported & looks nice 
-- ok, great - now how to use it? 
-- i want to dual boot on my PC. quick YouTube search: https://www.youtube.com/watch?v=Pn7jZ5i1RTM
-
-- on PC: https://help.ubuntu.com/lts/installation-guide/
-- 1) create windows 10 recovery: https://support.microsoft.com/en-us/help/4026852/windows-create-a-recovery-drive
-  - ~using 'My Passport' external hard drive (295GB free space)~
-  - needs to be an empty usb
-- 2) installing via: https://help.ubuntu.com/community/GettingUbuntu
-- 3) putting on usb/external hard drive: https://help.ubuntu.com/community/Installation/FromUSBStick
-  - https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-windows#1-overview
-  - moved contents of hdd to c drive
-  - used rufus to install ubuntu iso to hhd
-- 4) booted - restart and tap F12 key
-- 5) navigate to Boot menu and reorder priority list (make USB Disk 1st)
-
-- took a while (after initial boot) that ^ was to only boot ubuntu (not install it) - if not installed, all programs / saved data is wiped on next boot / reboot
-
-- 6) install ubuntu once booted (click install icon from desktop - after connecting to WiFi)
-  - installation type : something else -> partitioning 
-https://www.dell.com/support/article/en-us/sln301754/how-to-install-ubuntu-and-windows-8-or-10-as-a-dual-boot-on-your-dell-pc
-https://linuxhint.com/rufus_bootable_usb_install_ubuntu_18-04_lts/
-https://www.howtogeek.com/howto/35676/how-to-choose-a-partition-scheme-for-your-linux-pc/
-https://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-installation
-
-  - restart computer after install, should boot ubuntu (if external is plugged in)
-- 7) dual boot notes: https://askubuntu.com/questions/987228/can-i-dual-boot-using-an-external-hard-drive
-
-
-- reforamtted external drive (with ext4 type - only works with Linux (as opposed to NTFS which works with linux & windows))
-
-
-***
-
 - linux & terminal shortcuts / commands
 
 list files & dirs w/ permissions

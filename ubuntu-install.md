@@ -27,7 +27,22 @@ Ultimately, I ended up with Ubuntu 20.04 LTS booting up and working great. Yay! 
  - be patient - if dont have the proper hardware, hold off and go get it 
  - ensure going into something new, there is ability / tollerance for mistakes. if i had had valuable data on the Windows disk, it would have been bad.
 
-## P.S. - Helpful Shortcuts & Commands
+## References
+ - https://www.youtube.com/watch?v=sg4GOLWar44
+ - https://www.youtube.com/watch?v=fGNl0KxOt7Q
+ - https://www.youtube.com/watch?v=Pn7jZ5i1RTM
+ - https://help.ubuntu.com/lts/installation-guide/
+ - https://support.microsoft.com/en-us/help/4026852/windows-create-a-recovery-drive
+ - https://help.ubuntu.com/community/GettingUbuntu
+ - https://help.ubuntu.com/community/Installation/FromUSBStick
+ - https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-windows#1-overview
+ - https://www.dell.com/support/article/en-us/sln301754/how-to-install-ubuntu-and-windows-8-or-10-as-a-dual-boot-on-your-dell-pc
+ - https://linuxhint.com/rufus_bootable_usb_install_ubuntu_18-04_lts/
+ - https://www.howtogeek.com/howto/35676/how-to-choose-a-partition-scheme-for-your-linux-pc/
+ - https://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-installation
+ - https://askubuntu.com/questions/987228/can-i-dual-boot-using-an-external-hard-drive
+
+## P.S. - Some Helpful Shortcuts & Commands
  - prompt terminal:
   
 <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>t</kbd>
