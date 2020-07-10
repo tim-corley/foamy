@@ -70,6 +70,10 @@ delete file:
 
 $ rm my-file.txt
 
+delete dir (non-empty, no prompt):
+
+$ rm -rf my_dir
+
 
 
 
