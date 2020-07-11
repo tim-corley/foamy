@@ -35,6 +35,19 @@ delete dir (non-empty, no prompt):
 
 $ rm -rf my_dir
 
+launch new terminal window:
+
+alt + ctrl + t
+
+new terminal tab:
+
+ctrl + shift + t
+
+switch terminal tab:
+
+ctrl + page up / ctrl + page down
+
+
 
 
 
