@@ -7,6 +7,26 @@
 
 
 ### objects
+ - arrays
+```javascript
+const arr = [1, 2, 3, 4, 5]
+const [one, two] = arr
+console.log(one);
+```
+
+ - objects
+```javascript
+const actor = {
+    firstName: 'Tom',
+    lastName: 'Hanks',
+    oscarWinner: true,
+    age: 64
+}
+
+// map firstName to new variable
+const { firstName: name, age } = actor
+console.log(`${name} is ${age} years old!`);
+```
 
  - nested object
 ```javascript
