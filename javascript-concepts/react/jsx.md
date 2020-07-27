@@ -1,5 +1,7 @@
 ## JSX
 
+[Code Sandbox](https://codesandbox.io/s/jsx-ulqbv)
+
 JSX is a technology that was introduced by React. Can use JSX syntax to declaritively write syntax of what a component UI should be. And not using strings here to descripe the UI but rather using JavaScript.
 
 This is just JavaScript:
@@ -89,10 +91,126 @@ jsx resembles HTML but it is actually XML syntax so there are a few quirks to be
  - `class` --> `className`
 
 ### css in react
-- inline styling - good for simple styling 
+- inline styling - good for simple styling
+- differences between regular css and css in jsx:
+  - keys property names are camelCase
+  - values are strings
+  - seperate each tuple with a comma
+- inline styling not good with:
+  - media queries
+  - animation
+  - pseudo classes
+  - pseudo elements 
 
 ### forms in jsx
 
+the `value` attribute always holds the current value of the field
 
+the `defaultValue` attribute holds the default value that was set when the field was created. also applies to the `textarea` field.
+
+```javascript
+// instead of:
+<textarea>Some text here</textarea>
+// use:
+<textarea defaultValue={'Some text here'}/>
+```
+for `select` fields:
+```javascript
+// instead of:
+<select>
+    <option value="x" selected>
+    ...
+    </option>
+</select>
+// use:
+<select defaultValue="x">
+    <option value="x">...</option>
+</select>
+```
+
+### onChange
+
+by passing a function to the `onChange` attribute, you can subscribe to events on the form field. even works with:
+ - `radio` 
+ - `select`
+ - `checkbox`
+`onChange` also fires when typing a character into an `input` or `textarea`
+
+### whitespace
+
+need to explicitly add whitespace by adding a space expression
+```javascript
+<p>Something 
+    {' '}needs
+    {' '}space
+</p>
+```
+
+### comments 
+```javascript
+<p>
+    {/* a comment here */}
+    {
+        // another comment there
+    }
+</p>
+```
+
+### spread attributes
+
+in JSX, a common operation is assigning values to attributes 
+
+```javascript
+// instead of doin it manually...
+<div>
+    <BlogPost title={data.title} date={data.date} />
+</div>
+// you can pass...
+<div>
+    <BlogPost {...data} />
+</div>
+```
+
+here the properties of the `data` object will be used as attributes automatically thanks to the ES6 spread operator.
+
+### looping
+
+```javascript
+// for loop
+const elements = []
+cosnt items = []
+
+for (const [index, value] of elements.entries()) {
+    items.push(<Element key={index}>)
+}
+```
+
+```javascript
+// for loop
+const elements = ['alpha', 'bravo', 'charlie']
+cosnt items = []
+
+for (const [index, value] of elements.entries()) {
+    items.push(<li key={index}>{value}</li>)
+}
+
+return (
+    <div>
+        {items}
+    </div>
+)
+```
+
+```javascript
+// map 
+const elements = ['alpha', 'bravo', 'charlie']
+return (
+    <ul>
+        {elements.map((val, idx) => {
+            return <li key={idx}>{val}</li>
+        })}
+    </ul>
+)
+```
 
 
