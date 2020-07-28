@@ -51,3 +51,34 @@ class BlogPostExcerpt extends Component {
 up until recently, class components were the only way to define a component that had its own state and could access the lifecycle methods (so things could be done when component was first rendered, updated, or removed)
 
 __React Hooks__ changed this - so now functional components are now much more powerful, having access to state & lifecycle
+
+### fragments 
+
+a component can only return one single element - if more than one is needed it will have to be wrapped in a container tag. to avoid lots of unnecassary `div`s, use __React.Fragment__
+
+```javascript
+class BlogPostExcerpt extends Component {
+    renfer() {
+        return (
+            <React.Fragment>
+                <h1>{this.props.title}</h1>
+                <p>{this.props.description}</p>
+            </React.Fragment>
+        )
+    }
+}
+```
+
+```javascript
+// shorthand...
+class BlogPostExcerpt extends Component {
+    renfer() {
+        return (
+            <>
+                <h1>{this.props.title}</h1>
+                <p>{this.props.description}</p>
+            </>
+        )
+    }
+}
+```
