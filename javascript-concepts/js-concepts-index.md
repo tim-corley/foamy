@@ -16,6 +16,7 @@
 ## React
 
  - General Intro [[general.md]]
+ - Starter App [[react-app-starter.md]]
  - The Virtual DOM [[virtual-dom.md]]
  - Unidirectional Data Flow [[data-flow.md]]
  - JSX [[jsx.md]]
@@ -25,3 +26,6 @@
  - Events [[events.md]]
  - Forms [[forms.md]]
  - Server-Side Rendering [[server-side-rendering.md]]
+ - Context API [[context-api.md]]
+ - Higher Order Components [[higher-order-components.md]]
+ - Render Props [[render-props.md]]
