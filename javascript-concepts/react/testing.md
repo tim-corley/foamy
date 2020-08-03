@@ -244,3 +244,107 @@ test(`uppercase 'test' to equal 'TEST'`, async () => {
   expect(str).toBe("TEST");
 });
 ```
+
+### mocking
+
+mocking allows you to test functionality that depends on:
+
+- database
+- network requests
+- access to files
+- any external system
+
+so that:
+
+- tests run faster
+- tests are independent
+- tests do not populate any data storage
+
+most importantly, when executing a **unit test**, it should test the functionality of a function in **isolation** - not with all the baggage of things it touches
+
+using mocks, you can inspect if a module function has been called & which parameters were used, with:
+
+- `expect().toHaveBeenCalled`: check if a spied function has been called
+- `expect().toHaveBeenCalledTimes()`: count how many time a spied function has been called
+- `expect().toHaveBeenCalledWith`: check if the function has been called with a specific set of parameters
+- `expect().toHaveBeenLastCalledWith()`: check the parameters of the last time the function has been invoked
+
+**spy packages without affecting the functions code**
+
+when importing a package, you can tell Jest to "spy" on the execution of a particular function using `spyOn()`, without affecting how that method works
+
+```javascript
+import mathFuncs from "./math";
+
+test(`The mathjs log function`, () => {
+  const spy = jest.spyOn(mathjs, "log");
+  const result = mathjs.log(10000, 10);
+
+  expect(mathjs.log).toHaveBeenCalled();
+  expect(mathjs.log).toHaveBeenLastCalledWith(10000, 10);
+});
+```
+
+**mock an entire package**
+
+you can mock an entire package by creating a `__mocks__` folder in the project root and, within this folder, create one file for each package.
+
+say you import `mathjs` - create a `__mocks__/mathjs.js` file at project root and add:
+
+```javascript
+const testing = {
+  log: jest.fn(() => "test"),
+};
+
+export default testing;
+```
+
+this will mock the log function of the package - add as many functions as you want to mock
+
+```javascript
+import testing from "../__mocks__/mathjs.js"
+
+test(`The mathjs log function`, () => {
+    const result = mathjs.log(10000, 10)
+    expect(result).toBe('test)
+    expect(mathjs.log).toHaveBeenCalled()
+    expect(mathjs.log).toHaveBeenCalledWith(1000, 10)
+})
+```
+
+**mock a single function**
+
+mock a single function using `jest.fn()`
+
+```
+import mathFuncs from "./math"
+
+math.log = jest.fn(() => 'test')
+test(`The mathjs log function`, () => {
+    const result = mathjs.log(10000, 10)
+    expect(result).toBe('test)
+    expect(mathjs.log).toHaveBeenCalled()
+    expect(mathjs.log).toHaveBeenCalledWith(1000, 10)
+})
+```
+
+you can also use `jest.fn().mockReturnValue('test')` to create a simple mock that does nothing except return a value.
+
+**pre-build mocks**
+
+mock `fetch()` calls and provide sample return values without interacting with the actual server in tests by using [jest-fetch-mock](https://github.com/jefflau/jest-fetch-mock) library
+
+**snapshot testing**
+
+snapshot testing memorizes how the UI components are rendered and compares it to the current test - raising an error if there is a mismatch.
+
+[Code Sandbox](https://codesandbox.io/s/jest-snap-test-oywti)
+[Code Sandbox](https://codesandbox.io/s/jest-snapshots-7928o)
+
+be sure to pass update flag (`jest --updateSnapshot`)
+
+**testing react components**
+
+[Code Sandbox](https://codesandbox.io/s/testing01-85fwk?)
+
+https://www.npmjs.com/package/@testing-library/react
