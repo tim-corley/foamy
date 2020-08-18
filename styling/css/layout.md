@@ -2,7 +2,13 @@
 
 [Codepen](https://codepen.io/christinatruong/pen/OepEEP)
 
+[Codepen Collection](https://codepen.io/collection/AQkgKB?grid_type=list)
+
+/home/tim/Learning/Lynda/Styling/css-layouts
+
 ### css positioning
+
+does not control entire page flow. instead, use to fine tune certain pieces
 
 - normal flow: default layout method, same order as html
 - element floating
@@ -20,6 +26,8 @@ position
 - fixed: relative to the viewport
 - sticky: relative to containing element & viewport
 
+### css displays
+
 floats
 
 - **values:** left | right | none | inherit
@@ -31,11 +39,15 @@ floats
 
 ### flexbox
 
+- use for space distibution for items along same axis
+
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 
 [Codepen](https://codepen.io/christinatruong/pen/qwgjJo)
 
-one-dimension way to arrange elements
+The **Flexible Box Layout** (flexbox) provides many ways for aligning content, ordering items, and implementing flexible sizing
+
+one-dimension way to arrange elements - items are laid out in either single column or single row
 
 define flex on the parent container
 all child elements will be flex items
@@ -43,7 +55,9 @@ all child elements will be flex items
 - flex container (if `inline-flex`, sets width to contents)
 - flex items
 
-us `flex-direction` to determine ordering of content
+use `flex-direction` property to determine ordering of content
+
+use `flex-wrap` property to wrap items to new row
 
 can control:
 
@@ -71,6 +85,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
 ```
 
 ### css grid
+
+- use to control items that are in rows & columns
 
 [Codepen](https://codepen.io/christinatruong/pen/YbRWzy)
 
