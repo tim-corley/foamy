@@ -69,11 +69,11 @@ can control:
 aligning items in a flex container
 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox#Horizontal_and_vertical_alignment
-https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
-https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
 
-- **justify-content**: aligns items on the main axis
-- **align-items**: aligns items on the cross axis
+- **justify-content**: aligns items on the main axis - [docs](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+- **align-items**: aligns items on the cross axis - [docs](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
+- **flex-direction**: sets how flex items are placed in the flex container - [docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
+- **flex-wrap**: sets whether flex items are forced onto one line or can wrap onto multiple lines - [docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
 
 ```css
 .box {
@@ -128,3 +128,31 @@ gap: 10px 20px;
 use implicit grid when working with dynamic / unknown data
 
 `grid-auto-rows` & `grid-auto-columns`
+
+**minmax**
+
+Defines a size range greater than or equal to min and less than or equal to max.
+
+```css
+grid-template-columns: minmax(20px, auto) 1fr 1fr;
+```
+
+**grid-template-areas**
+
+Specifies named grid areas, establishing the cells in the grid and assigning them names.
+
+```css
+/* set the template */
+grid-template-areas:
+  "a a a"
+  "b c c"
+  "b c c";
+/* place element in an area */
+.header {
+  grid-area: a;
+}
+.side-nav {
+  grid-area: b;
+}
+}
+```
