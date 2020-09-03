@@ -1,7 +1,1 @@
-# DevOps
-
-## Linux
-
-## Docker
-
-## Jenkins
+# Devops Index

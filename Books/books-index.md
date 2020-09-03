@@ -1,9 +1,1 @@
-# Books
-
-## Algorithms
-
-## Design Patterns
-
-## JavaScript
-
-## Python
+# Books Index

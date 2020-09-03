@@ -1,9 +1,2 @@
-# Data Structures
+# Data Structures Index
 
-## Stacks
-
-## Queues
-
-## Linked Lists
-
-## Hash Tables

@@ -1,13 +1,1 @@
-# Databases
-
-## SQL
-
-### Postgres
-
-## noSQL
-
-### Mongo
-
-## Cloud
-
-### Firestore
+# Databases Index

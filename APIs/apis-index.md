@@ -1,7 +1,1 @@
-# APIs
-
-## REST
-
-## GraphQL
-
-## Apollo
+# Apis Index
