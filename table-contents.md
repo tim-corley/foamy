@@ -3,9 +3,11 @@
 - Algorithms [[algorithms-index]]
 - APIs [[apis-index]]
 - Books [[books-index]]
+- Daily [[daily-index]]
 - Data Structures [[data-structures-index]]
 - Databases [[databases-index]]
 - DevOps [[devops-index]]
+- Git [[git-index]]
 - JavaScript [[javascript-index]]
 - Python [[python-index]]
 - Styling [[styling-index]]
@@ -14,9 +16,11 @@
 [algorithms-index]: Algorithms/algorithms-index "Algorithms Index"
 [apis-index]: APIs/apis-index "Apis Index"
 [books-index]: Books/books-index "Books Index"
+[daily-index]: Daily/daily-index "Daily Index"
 [data-structures-index]: Data-Structures/data-structures-index "Data Structures Index"
 [databases-index]: Databases/databases-index "Databases Index"
 [devops-index]: DevOps/devops-index "Devops Index"
+[git-index]: Git/git-index "Git Index"
 [javascript-index]: JavaScript/javascript-index "Javascript Index"
 [python-index]: Python/python-index "Python Index"
 [styling-index]: Styling/styling-index "Styling Index"
