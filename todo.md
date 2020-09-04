@@ -7,3 +7,4 @@ _note:_ <kbd>Alt</kbd>+<kbd>d</kbd> will create a new daily note
 - [x] organize notes
 - [x] fix foam wiki links
 - [ ] review data structures
+- [ ] add section for Slack
