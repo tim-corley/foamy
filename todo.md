@@ -11,6 +11,6 @@ _note:_ <kbd>Alt</kbd>+<kbd>d</kbd> will create a new daily note
 
 **9/7/20**
 
-- [ ] add (jest) tests to eliquent js exercises
+- [x] add (jest) tests to eliquent js exercises
 - [ ] add readme to eloquent-js repo
 - [ ] finish ch. 4 exercises
