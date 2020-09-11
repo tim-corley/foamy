@@ -1,5 +1,7 @@
 # Stacks
 
+- Example: https://codepen.io/beaucarnes/pen/yMBGbR?editors=0012
+
 ## Last In, First Out
 
 ![stack diagram](img/stack.png)

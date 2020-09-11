@@ -7,6 +7,7 @@
 - Data Structures [[data-structures-index]]
 - Databases [[databases-index]]
 - DevOps [[devops-index]]
+- General [[general-index]]
 - Git [[git-index]]
 - JavaScript [[javascript-index]]
 - Python [[python-index]]
@@ -20,6 +21,7 @@
 [data-structures-index]: Data-Structures/data-structures-index "Data Structures Index"
 [databases-index]: Databases/databases-index "Databases Index"
 [devops-index]: DevOps/devops-index "Devops Index"
+[general-index]: General/general-index "General Index"
 [git-index]: Git/git-index "Git Index"
 [javascript-index]: JavaScript/javascript-index "Javascript Index"
 [python-index]: Python/python-index "Python Index"

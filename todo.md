@@ -14,3 +14,8 @@ _note:_ <kbd>Alt</kbd>+<kbd>d</kbd> will create a new daily note
 - [x] add (jest) tests to eliquent js exercises
 - [ ] add readme to eloquent-js repo
 - [ ] finish ch. 4 exercises
+
+**9/11/20**
+
+- [ ] finish sets data structure tests
+- [ ] finish binary search tree example

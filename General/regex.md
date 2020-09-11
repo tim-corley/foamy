@@ -1,9 +1,4 @@
-# 2020-09-10
-
-- [x] finish hash tables examples
-- [ ] work on eloquent js exercises
-
-## Regular Expression Notes
+# Regular Expressions
 
 ### grep
 
