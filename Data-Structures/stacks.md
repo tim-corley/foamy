@@ -2,6 +2,8 @@
 
 - Example: https://codepen.io/beaucarnes/pen/yMBGbR?editors=0012
 
+- Used: Depth First Search
+
 ## Last In, First Out
 
 ![stack diagram](img/stack.png)
