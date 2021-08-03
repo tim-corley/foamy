@@ -56,6 +56,24 @@ Installed via ubuntu software program
    ```bash 
    sudo apt install npm
    ```
+3) install yarn
+   ```bash
+   npm install --global yarn
+   ```
+
+5) install nvm & install node version
+   ```bash
+   wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+   nvm install 16.6.1
+   nvm use 16
+   node --version
+   ```
+
+## cURL 
+1) install curl
+   ```bash
+   sudo apt install curl
+   ```
 
 ## ZSH 
 
